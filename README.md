@@ -10,26 +10,42 @@ Python 3.x, opencv, numpy
 
 ### Installing
 
-You can install package "opencv" and "numpy" via pip install
+You can install package "opencv" and "numpy" via pip install on either original or virtual environment.
 
+#### Create virtual environment
+
+1. In the project folder, install virtaulenv via pip
 ```
-pip install numpy
-```
-```
-pip install opencv-python
+pip install virtualenv
 ```
 
-or run virtual environment by the copy of the project.
+2. create a virtualenv called venv
+```
+virtualenv -p python3 venv
+```
 
-In the project folder,
-Enter virtual environment
+3. Enter virtual environment
 ```
 source venv/bin/activate
 ```
 
-Leave virtual environment
+4. Leave virtual environment
 ```
 deactivate
+```
+
+#### install required packages
+
+In the virtual environment,
+
+install numpy
+```
+pip install numpy
+```
+
+install opencv
+```
+pip install opencv-python
 ```
 
 ### Running the project
